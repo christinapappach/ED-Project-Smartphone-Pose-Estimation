@@ -1,0 +1,55 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# native build artifacts (but NOT the whole ios/android folders — we commit those
+# because this project has custom native code: ARCapture Swift module, app icon, etc.)
+ios/Pods/
+ios/build/
+ios/DerivedData/
+ios/vendor/
+ios/.bundle/
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+
+# python / tooling
+*.log
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+
+# Backups / archives
+Calibration.zip
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+
+# Node / React Native
+node_modules/
+.expo/
+.expo-shared/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# iOS / CocoaPods / Bundler
+Calibration/smartphone_UI/ios/Pods/
+Calibration/smartphone_UI/ios/vendor/
+Calibration/smartphone_UI/ios/build/
+Calibration/smartphone_UI/ios/.xcode.env.local
+Calibration/smartphone_UI/ios/Podfile.lock.bak
+
+# Android
+Calibration/smartphone_UI/android/.gradle/
+Calibration/smartphone_UI/android/build/
+Calibration/smartphone_UI/android/app/build/
+Calibration/smartphone_UI/android/local.properties
+
+# MeTRAbs run outputs (research data — not source)
+output_file_*.csv
+narration_*.txt
+
+# IDE
+.idea/
+.vscode/
+.claude/

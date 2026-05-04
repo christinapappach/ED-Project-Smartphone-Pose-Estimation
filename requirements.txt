@@ -1,0 +1,17 @@
+# Python deps for the MeTRAbs analysis + upload scripts at the repo root.
+# Install with:  pip install -r requirements.txt
+# Recommended:   python3 -m venv .venv && source .venv/bin/activate
+
+certifi
+huggingface_hub
+numpy
+opencv-python
+pandas
+requests
+
+# Server-side only (nine.py runs on the Hugging Face Space, not on your laptop).
+# Uncomment if you want to run nine.py / metrabs_server.py locally:
+# fastapi
+# gradio
+# tensorflow
+# uvicorn
