@@ -8,7 +8,10 @@ This repo bundles three things:
 |---|---|
 | `Calibration/Calibration.xcodeproj` | Native Swift/ARKit capture app (`Calibration` target) |
 | `Calibration/smartphone_UI/` | React Native variant of the capture app (slightly modified fork of [christinapappach/smartphone-pose-estimation](https://github.com/christinapappach/smartphone-pose-estimation)) |
-| `nine.py`, `analyze_csvs.py`, `narrate_runs.py`, `upload_all.py` | MeTRAbs server + local analysis scripts |
+| `app.py` | Reference copy of the MeTRAbs server code that runs on the Hugging Face Space (kept here for reference; the live server is hosted on HF — see link below) |
+| `analyze_csvs.py`, `narrate_runs.py`, `upload_all.py`, `Calibration/appnine.py` | Local analysis + batch upload scripts |
+
+**Live MeTRAbs backend (Hugging Face Space):** https://huggingface.co/spaces/EngDesFAU26/SmartphonePose-MeTRAbs-Server
 
 ---
 
@@ -145,7 +148,7 @@ pip install -r requirements.txt
 | `upload_all.py` | Sequentially uploads `VID1..VID9` from a capture folder to the MeTRAbs HF Space and saves each output CSV |
 | `analyze_csvs.py` | Reads every `output_file_*.csv` and reports per-VID tallies + summary stats |
 | `narrate_runs.py` | Samples the Pelvis trajectory at evenly-spaced waypoints and narrates each run |
-| `nine.py` | The MeTRAbs server itself (BATCH-OF-9 variant) — runs **on the Hugging Face Space**, not locally |
+| `app.py` | Reference copy of the MeTRAbs server (runs on the [Hugging Face Space](https://huggingface.co/spaces/EngDesFAU26/SmartphonePose-MeTRAbs-Server), not locally) |
 
 Point `upload_all.py` at your own Space if you have one:
 
@@ -167,9 +170,9 @@ The default Space is `https://engdesfau26-smartphonepose-metrabs-server.hf.space
 │   ├── Calibration/                  # Swift sources, Info.plist, assets
 │   ├── ARCaptureManager.swift
 │   ├── MetrabsUploader.swift
-│   ├── metrabs_server.py             # Reference server (lighter than nine.py)
+│   ├── metrabs_server.py             # Reference server (lighter)
 │   └── smartphone_UI/                # React Native variant — see its own README
-├── nine.py                           # MeTRAbs HF Space server (BATCH-OF-9)
+├── app.py                            # Reference copy of MeTRAbs HF Space server
 ├── upload_all.py                     # Batch uploader for VID1..VID9
 ├── analyze_csvs.py                   # CSV analyzer
 ├── narrate_runs.py                   # Trajectory narrator

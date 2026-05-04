@@ -1,8 +1,0 @@
-tensorflow==2.15.0
-opencv-python-headless
-certifi
-fastapi
-uvicorn
-python-multipart
-huggingface_hub>=0.20
-numpy<2
