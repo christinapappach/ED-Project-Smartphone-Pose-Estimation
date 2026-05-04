@@ -1,5 +1,7 @@
 # ED Project — Smartphone Pose Estimation
 
+> **Scope of this repo:** this GitHub repo only contains the **UI / frontend** (the iPhone capture apps + the local client-side analysis scripts). The MeTRAbs pose-estimation **backend** lives on Hugging Face — see the link below.
+
 iPhone-based 3D human pose capture pipeline for the **FAU EngDesFAU26** Engineering Design research project. Records 60 fps ARKit video + camera intrinsics on iPhone, uploads each capture to a [MeTRAbs](https://github.com/isarandi/metrabs) backend running on a Hugging Face Space, and analyzes the resulting 3D pose CSVs locally.
 
 This repo bundles three things:
